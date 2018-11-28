@@ -1,0 +1,41 @@
+html,body, main,.container{
+    width: 100%;
+    height: 100%;
+  }
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr 1.5fr repeat(2,1fr);
+  grid-gap: 10px;
+}
+.judul, .samadengan, .hasil{
+  background-color:powderblue;
+  grid-column: 1/4;
+}
+.input_angka{
+  background-color: GreenYellow;
+}
+.operator{
+  background-color: Red;
+}
+.samadengan{
+  background-color: gold;
+}
+.hasil{
+  background-color: LightPink;
+}
+button{
+  width: 100%;
+  height: 100%;
+}
+
+/*Rata Tengah */
+.judul, .samadengan, .hasil, .input_angka, .operator{
+  display: flex;
+  align-items: center;; /*tengah*/
+  justify-content: center;
+}
+body{
+  background-color: pink;
+  font-family: monospace;
+}

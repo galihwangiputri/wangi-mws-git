@@ -1,0 +1,29 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    baca text
+    <div class="" id="hasil">
+
+    </div>
+    <script type="text/javascript">
+      fetch("catatan.txt") //bisa URL
+      .then ( hasil => {
+        //Menampilkan isi file catatan.txt pada console
+        return hasil.text() //dijadikan text
+        //menghasilkan response, (tidak bisa dibaca), streaming
+        //console.log(hasil);
+      })
+      .then (t => {
+        console.log(t);
+        let p = document.getElementById('hasil');
+        let text = document.createElement("p");
+        p.appendChild(text);
+        text.innerText=t;
+      })
+      .catch( err => console.log(err)); //jika error
+    </script>
+  </body>
+</html>

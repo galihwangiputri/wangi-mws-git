@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style media="screen">
+      html,body, main,.container{
+          width: 100%;
+          height: 70%;
+        }
+      .container{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 0.3fr;
+        grid-template-rows: 1fr 1.5fr;
+        grid-gap: 7px;
+      }
+      .calc, .tombol, .operator{
+        /*Rata Tengah */
+        display: flex;
+        align-items: center; /*tengah*/
+        justify-content: center;
+      }
+      .calc{
+        grid-column:1/4;
+        background-color: lightgreen;
+      }
+      .layar{
+        background-color: powderblue;
+      }
+      .tombol{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-row: 1fr 1fr 1fr;
+        background-color: lightyellow;
+        padding: 5px;
+      }
+      .operator{
+        display: grid;
+        background-color: #FF8A65;
+      }
+      .btn0{
+        grid-column:1/2:
+      }
+      body{
+        font-family: monospace;
+      }
+      button{
+        background: white;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">Calculator</div>
+      <div class="layar"><span id="layar"></span></div>
+      <div class="tombol">
+
+        <button type="button" name="1" value="1">1</button>
+        <button type="button" name="2" value="2">2</button>
+        <button type="button" name="3" value="3">3</button>
+        <button type="button" name="4" value="4">4</button>
+        <button type="button" name="5" value="5">5</button>
+        <button type="button" name="6" value="6">6</button>
+        <button type="button" name="7" value="7">7</button>
+        <button type="button" name="8" value="8">8</button>
+        <button type="button" name="9" value="9">9</button>
+        <button class="btn0" type="button" name="0" value="0">0</button>
+        <button type="button" name="hapus" value="">Hapus</button>
+      </div>
+      <div class="operator">
+        <button type="button" name="+" value="+">+</button>
+        <button type="button" name="-" value="-">-</button>
+        <button type="button" name="*" value="*">*</button>
+        <button type="button" name="/" value="/">/</button>
+      </div>
+    </div>
+  </body>
+</html>

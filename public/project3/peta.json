@@ -1,0 +1,34 @@
+{
+  "places" :[
+    {
+      "lokasi"      : [-7.756292, 110.393130],
+      "coffeeshop"  : "Kaktus Coffee Place",
+      "gambar"      : "../images/kaktus.jpg",
+      "review"      : "Good place, good ambience, good service as well."
+    },
+    {
+      "lokasi"      : [-7.758144, 110.391981],
+      "coffeeshop"  : "Ekologi Desk & Coffee",
+      "gambar"      : "../images/ekologi.jpg",
+      "review"      : "Nice place, good atmosphere, good music, good service."
+    },
+    {
+      "lokasi"      : [-7.746232, 110.412478],
+      "coffeeshop"  : "Cha Cha Milk Tea",
+      "gambar"      : "../images/chacha.jpg",
+      "review"      : "Fast service, clean place, WiFi available"
+    },
+    {
+      "lokasi"      : [-7.748798, 110.411551],
+      "coffeeshop"  : "EPLUS (coffee.internet.event)",
+      "gambar"      : "../images/eplus.jpg",
+      "review"      : "The place is nice, clean and cozy. Then the beverages is also good. However, the internet is a bit weak. This place can be your choice to chill out or to do your tasks."
+    },
+    {
+      "lokasi"      : [-7.766757, 110.405802],
+      "coffeeshop"  : "Loops",
+      "gambar"      : "../images/loops.jpg",
+      "review"      : "Cheap and suitable for doing the homework or just have a chit chat with your friends. The panekoek is so delicious!"
+    }
+  ]
+}

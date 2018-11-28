@@ -1,0 +1,70 @@
+html,body, main,.container{
+    width: 100%;
+    height: 100%;
+  }
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 0.5fr repeat(3,1fr) 0.5fr;
+  grid-gap: 4px;
+}
+.menu{
+  background-color:powderblue;
+  grid-column: 1/5;
+  /*Rata Tengah */
+  display: flex;
+  align-items: center; /*tengah*/
+  justify-content: center;
+}
+.sidebar{
+  background-color: lightyellow;
+  grid-row: 2/5;
+  /*Rata Tengah*/
+  display: flex;
+  align-items: flex-start; /*atas*/
+  justify-content: center;
+}
+/*Rata Tengah*/
+.konten1, .konten2, .konten3, .footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.konten1,.konten2,.konten3{
+  background-color: pink;
+  grid-column: 2/5;
+  width: 100%
+}
+.footer{
+  background-color: gray;
+  grid-column: 1/5;
+  color: white;
+}
+body{
+  background-color: pink;
+  font-family: monospace;
+}
+img{
+  max-width: 70px;
+  max-height: 70px;
+  width: 100%;
+  padding: 2px;
+}
+a:link{
+  text-decoration: none;
+}
+a:hover{
+  background-color: yellow;
+  border-radius: 8px;
+}
+
+/*
+display: flex;
+align-items: center;
+justify-content: center;
+ */
+
+/*
+align-self: center;
+justify-self: center;
+ */

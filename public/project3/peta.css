@@ -1,0 +1,37 @@
+html, body, #map {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 6fr 4fr;
+}
+.peta {
+    grid-column: 1/9;
+}
+.gambar {
+    background: LightSalmon;
+    grid-column: 1/6;
+}
+.review {
+    background: LightSkyBlue;
+    grid-column:6/9;
+}
+#container img {
+  height: 80%; /*Belum fit div*/
+   width: 70%;
+}
+#dfgbr, mark, #dfnama{
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: DimGray;
+}

@@ -1,0 +1,58 @@
+<!--xampp-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Make Website Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      html,body, main,.container{
+        width: 100%;
+        height: 100%;
+      }
+      .container{
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px;
+        grid-gap: 4px;
+      }
+      .kotak1{
+        background-color:PaleGreen ;
+        grid-column: 1/3;
+      }
+      .kotak2{
+        background-color: gold;
+      }
+      .kotak3{
+        background-color: turquoise;
+        grid-row: 2/4;
+      }
+      .kotak4{
+        background-color: violet;
+        grid-column: 2/4;
+      }
+      .kotak5{
+        background-color: PaleGreen;
+      }
+      .kotak6{
+        background-color: orange;
+      }
+      body{
+        background-color: pink;
+        font-family: monospace;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+      <div class="kotak5">5</div>
+      <div class="kotak6">6</div>
+    </div>
+
+  </body>
+</html>

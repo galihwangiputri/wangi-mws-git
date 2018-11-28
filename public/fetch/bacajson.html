@@ -1,0 +1,30 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    baca text
+    <div class="" id="hasil">
+
+    </div>
+    <script type="text/javascript">
+      fetch("catatan.json") //bisa URL
+      .then ( hasil => {
+        //console.log(hasil);
+        return hasil.json(); //ambil hasil berupa json
+      })
+      .then (t => {
+        console.log(t);
+        let s = "HOTEL : " + t.hotel + ", KOTA : " + t.kota; //kota dan hotel bagian dari json
+        console.log(s) //ubah json to string
+
+        let p = document.getElementById('hasil');
+        let text = document.createElement("p");
+        p.appendChild(text);
+        text.innerHTML=s; //memindahkan hasil dari console ke layar
+      })
+      .catch( err => console.log(err)); //jika error
+    </script>
+  </body>
+</html>
