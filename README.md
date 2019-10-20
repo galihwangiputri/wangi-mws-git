@@ -1,5 +1,5 @@
-## Mobile Web Spesialist
-Sebuah website yang dibangun dengan Progressive Web Apps menggunakan firebase dan leaflet.
+# Mobile Web Spesialist
+Sebuah website yang dibangun dengan prinsip Progressive Web Apps menggunakan firebase dan leaflet.
 
 ## Fitur
 * Kalkulator penjumlahan sederhana
@@ -9,7 +9,7 @@ Sebuah website yang dibangun dengan Progressive Web Apps menggunakan firebase da
 * Firebase
 * Leaflet
 
-# Demo
+## Demo
 Kunjungi website https://wangi-mws.firebaseapp.com
 
 ## Screeenshot
